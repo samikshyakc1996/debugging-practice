@@ -38,12 +38,14 @@ window.addEventListener("DOMContentLoaded", function () {
           card1.classList.remove("is-selected");
           card2.classList.remove("is-selected");
           selectedCards = [];
-        }, 500);
+        }, 300);
       }
 
       // If we've matched all the cards, display a message.
       if (matchedCards.length === cards.length) {
-        alert("You matched all the cards, nice job!");
+        setTimeout(function () {
+          alert("You matched all the cards, nice job!");
+        }, 300);
       }
     });
   });
